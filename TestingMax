@@ -15,5 +15,5 @@ ensures c >= a && c >= b
 method Testing()
 {
   var m := Max(5,10);
-  assert m== 10;
+  assert m == 10;
 }
