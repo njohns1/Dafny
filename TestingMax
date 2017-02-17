@@ -1,0 +1,19 @@
+method Max(a: int, b:int) returns (c: int)
+ensures c == a || c == b
+ensures c >= a && c >= b
+{
+  if a < b 
+  {
+    return b;        
+  }
+  else
+  {
+    return a;
+  }
+}
+
+method Testing()
+{
+  var m := Max(5,10);
+  assert m== 10;
+}
